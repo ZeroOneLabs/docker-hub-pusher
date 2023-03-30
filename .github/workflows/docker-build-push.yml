@@ -3,8 +3,9 @@ name: Docker Image CI
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    paths-ignore:
+      - '**/README.md'
+      - '.github/**'
 
 env:
   IMAGE_NAME: zol-test-image
@@ -13,7 +14,7 @@ env:
 
 jobs:
 
-  build:
+  build-n-push:
     runs-on: ubuntu-latest
 
     steps:
