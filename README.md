@@ -15,6 +15,8 @@ Add the following Github Secrets to your repo:
 - DOCKER_HUB_USERNAME
 - DOCKER_HUB_TOKEN
 
+_Note_: Your Docker token must have `read/write` privileges!
+
 Change the following `env` variable for your image name in `.github/workflows/docker-build-push.yml`:
 
 - IMAGE_NAME
