@@ -4,6 +4,7 @@ on:
   push:
     branches: [ "main" ]
     paths-ignore:
+    # Ignore README.md and Github Actions updates
       - '**/README.md'
       - '.github/**'
 
